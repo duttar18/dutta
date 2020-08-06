@@ -1,3 +1,11 @@
+:root {
+  --pro1: #000000;
+  --pro2: #777777;
+  --per1: #FED18C;
+  --per2: #FFFFFF;
+  --homePad: 40px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +13,93 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+html
+{
+  height: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.home {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row; 
+}
+
+.home-professional {
+  background-color: var(--pro1);
+  color: var(--pro2);
+  height: 100%;
+  width: 50%;
+  align-items: right;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home-professional h1 {
+  width: 100%;
+  text-align: left;
+  padding-left: var(--homePad);
+  margin: 0px;
+  font-size: 5em;
+}
+
+.home-professional hr {
+  width: 60%;
+  margin-left: 0;
+  border: 1px solid var(--pro2);
+}
+
+.home-professional p {
+  width: 100%;
+  text-align: left;
+  padding-left: var(--homePad);
+  margin: 0px;
+  font-size: 2em;
+}
+
+.home-personal {
+  background-color: var(--per1);
+  color: var(--per2);
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: left;
+}
+
+.home-personal h1 {
+  width: auto;
+  text-align: right;
+  padding-right: var(--homePad);
+  margin: 0px;
+  font-size: 5em;
+}
+
+.home-personal hr {
+  width: 60%;
+  align-items: right;
+  margin-right: 0;
+  border: 1px solid var(--per2);
+}
+
+.home-personal p {
+  width: auto;
+  text-align: right;
+  padding-right: var(--homePad);
+  margin: 0px;
+  font-size: 2em;
 }
