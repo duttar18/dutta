@@ -25,6 +25,9 @@ html
   height: 100%;
 }
 
+.Browser {
+  height: 100%;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -40,12 +43,13 @@ code {
 .home-professional {
   background-color: var(--pro1);
   color: var(--pro2);
-  height: 100%;
+  height: auto;
   width: 50%;
   align-items: right;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  text-decoration: none;
 }
 
 .home-professional h1 {
@@ -79,6 +83,7 @@ code {
   justify-content: center;
   flex-direction: column;
   align-items: left;
+  text-decoration: none;
 }
 
 .home-personal h1 {
@@ -102,4 +107,23 @@ code {
   padding-right: var(--homePad);
   margin: 0px;
   font-size: 2em;
+}
+
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
 }
