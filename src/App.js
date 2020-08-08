@@ -37,14 +37,17 @@ class App extends React.Component {
             </li>
           </ul>  */}
         </nav>
-        <AnimatePresence exitBeforeEnter>  
-          <Switch location={window.location} key={window.location.pathname}> 
-            <Route exact path={["/home","/"]} component={Home} />
-            <Route path="/personal" component={Personal}/>
-            <Route path="/professional" component={Professional}/>
-          </Switch>
-        </AnimatePresence>
+        <div className="home">
+          <AnimatePresence exitBeforeEnter>  
+            <Switch location={window.location} key={window.location.pathname}> 
+              <Route exact path={["/home","/"]} component={Home} />
+              <Route path="/personal" component={Personal}/>
+              <Route path="/professional" component={Professional}/>
+            </Switch>
+          </AnimatePresence>
+        </div>
       </Router>
+
     )
   }
 }
