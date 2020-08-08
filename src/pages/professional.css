@@ -18,7 +18,7 @@
     text-decoration: none;
   }
   
-  .home-professional div {
+  .home-professional h1 {
     width: 100%;
     text-align: left;
     padding-left: var(--homePad);
@@ -52,7 +52,7 @@
     text-decoration: none;
   }
   
-  .home-personal div {
+  .home-personal h1 {
     width: auto;
     text-align: right;
     padding-right: var(--homePad);
@@ -75,3 +75,7 @@
     font-size: 2em;
   }
   
+  .left-arrow {
+    transform: rotate(-90deg);
+    width: 50px;
+  }
