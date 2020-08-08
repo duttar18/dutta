@@ -1,3 +1,4 @@
+import './personal.css';
 import React from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 
@@ -22,8 +23,8 @@ const pageVariants = {
 };
 
 const pageTransition = {
-  type: "tween",
-  ease: "anticipate",
+  ease: "easeOut",
+  type: 'tween',
   duration: 0.5
 };
 const pageStyle = {
@@ -31,25 +32,43 @@ const pageStyle = {
 };
 
 
+
+const homeVariants = {
+  initial: {opacity: 1},
+  in: { opacity: 1 },
+  out: { opacity: 1 },
+}
+
+const leftVariant = {
+  initial: {width: '50%' },
+  in: { width: '95%' },
+  out: { width: '50%' },
+}
+const rightVariant = {
+  initial: {width: '50%' },
+  in: { width: '5%' },
+  out: { width: '50%' },
+}
+
+
 function Personal() {
   return (
+      
       <motion.div
         style={pageStyle}
         initial="initial"
         animate="in"
         exit="out"
-        variants={pageVariants}
+        variants={homeVariants}
         transition={pageTransition}
         className="home"
       >
-      <a className="home-personal">
+      <motion.a transition={pageTransition} variants={leftVariant} className="home-personal">
         hiiiii This is my personal
-      </a>
-      <a href="home" className="home-professional">
-        <h1>Dutta</h1>
-        <hr/>
-        <p>home</p>
-      </a>
+      </motion.a>
+      <motion.a  transition={pageTransition} variants={rightVariant} href="home" className="home-professional">
+        <img src={require("../images/collapse-arrow.png")} className="left-arrow"/>
+      </motion.a>
       </motion.div>
   );
 }

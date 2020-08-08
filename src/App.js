@@ -18,7 +18,8 @@ class App extends React.Component {
     return(
       <Router>
          <nav>
-          <ul className="nav nav-pills flex-column">
+           
+          {/* <ul className="nav nav-pills flex-column">
             <li className="nav-item">
               <NavLink to="/" exact className="nav-link text-white">
                 Home
@@ -34,7 +35,7 @@ class App extends React.Component {
                 Professional
               </NavLink>
             </li>
-          </ul>
+          </ul>  */}
         </nav>
         <AnimatePresence exitBeforeEnter>  
           <Switch location={window.location} key={window.location.pathname}> 
