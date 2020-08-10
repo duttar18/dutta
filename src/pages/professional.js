@@ -1,6 +1,7 @@
-import './personal.css';
+import './professional.css';
 import React from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
+import {Link} from 'react-router-dom'
 
 const pageVariants = {
   initial: {
@@ -33,7 +34,7 @@ const pageStyle = {
 
 
 
-const homeVariants = {
+const professionalVariants = {
   initial: {opacity: 1},
   in: { opacity: 1 },
   out: { opacity: 1 },
@@ -59,16 +60,18 @@ function Professional() {
         initial="initial"
         animate="in"
         exit="out"
-        variants={homeVariants}
+        variants={professionalVariants}
         transition={pageTransition}
-        className="home"
+        className="professional"
       >
-      <motion.a transition={pageTransition} variants={leftVariant} href="home" className="home-personal">
-        <img src={require("../images/collapse-arrow.png")} className="left-arrow"/>
-      </motion.a>
-      <motion.a  transition={pageTransition} variants={rightVariant} className="home-professional">
+      <motion.div transition={pageTransition} variants={leftVariant} className="professional-home">
+        <Link to="/home">
+          <img src={require("../images/collapse-arrow.png")} className="right-arrow"/>
+        </Link>
+      </motion.div>
+      <motion.div  transition={pageTransition} variants={rightVariant} className="professional-professional">
         hiiiii This is my professional
-      </motion.a>
+      </motion.div>
       </motion.div>
   );
 }

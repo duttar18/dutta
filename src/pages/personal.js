@@ -1,26 +1,11 @@
 import './personal.css';
 import React from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
+import {withRouter,Link} from 'react-router-dom'
 
-const pageVariants = {
-  initial: {
-    opacity: 0,
-    x: "-100vw",
-    scale: 0.8
-  },
-  in: {
-    opacity: 1,
-    x: 0,
-    scale: 1,
-    duration: 1,
-  },
-  out: {
-    opacity: 0,
-    x: "100vw",
-    scale: 1.2,
-    duration: 1
-  }
-};
+
+
+
 
 const pageTransition = {
   ease: "easeOut",
@@ -33,7 +18,7 @@ const pageStyle = {
 
 
 
-const homeVariants = {
+const personalVariants = {
   initial: {opacity: 1},
   in: { opacity: 1 },
   out: { opacity: 1 },
@@ -59,20 +44,22 @@ function Personal() {
         initial="initial"
         animate="in"
         exit="out"
-        variants={homeVariants}
+        variants={personalVariants}
         transition={pageTransition}
-        className="home"
+        className="personal"
       >
-      <motion.a transition={pageTransition} variants={leftVariant} className="home-personal">
+      <motion.div transition={pageTransition} variants={leftVariant} className="personal-personal">
         hiiiii This is my personal
-      </motion.a>
-      <motion.a  transition={pageTransition} variants={rightVariant} href="home" className="home-professional">
-        <img src={require("../images/collapse-arrow.png")} className="left-arrow"/>
-      </motion.a>
+      </motion.div>
+      <motion.div  transition={pageTransition} variants={rightVariant} className="personal-home">
+        <Link to="/home">
+          <img src={require("../images/collapse-arrow.png")} className="left-arrow"/>
+        </Link>
+      </motion.div>
       </motion.div>
   );
 }
 
 
 
-export default Personal
+export default withRouter(Personal)

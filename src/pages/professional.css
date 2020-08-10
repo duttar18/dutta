@@ -1,12 +1,12 @@
 
-.home {
+.professional {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: row; 
   }
   
-  .home-professional {
+  .professional-professional {
     background-color: var(--pro1);
     color: var(--pro2);
     height: 100%;
@@ -17,65 +17,29 @@
     flex-direction: column;
     text-decoration: none;
   }
-  
-  .home-professional h1 {
-    width: 100%;
-    text-align: left;
-    padding-left: var(--homePad);
-    margin: 0px;
-    font-size: 5em;
-  }
-  
-  .home-professional hr {
-    width: 60%;
-    margin-left: 0;
-    border: 1px solid var(--pro2);
-  }
-  
-  .home-professional p {
-    width: 100%;
-    text-align: left;
-    padding-left: var(--homePad);
-    margin: 0px;
-    font-size: 2em;
-  }
-  
-  .home-personal {
+
+  .professional-home {
     background-color: var(--per1);
     color: var(--per2);
     height: 100%;
-    width: 50%;
+    min-width: 50px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: left;
     text-decoration: none;
   }
-  
-  .home-personal h1 {
-    width: auto;
-    text-align: right;
-    padding-right: var(--homePad);
-    margin: 0px;
-    font-size: 5em;
+
+  .professional-home a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
   }
   
-  .home-personal hr {
-    width: 60%;
-    align-items: right;
-    margin-right: 0;
-    border: 1px solid var(--per2);
-  }
-  
-  .home-personal p {
-    width: auto;
-    text-align: right;
-    padding-right: var(--homePad);
-    margin: 0px;
-    font-size: 2em;
-  }
-  
-  .left-arrow {
-    transform: rotate(-90deg);
+  .right-arrow {
+    transform: rotate(90deg);
     width: 50px;
   }
