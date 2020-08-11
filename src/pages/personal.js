@@ -35,6 +35,12 @@ const rightVariant = {
   out: { width: '50%' },
 }
 
+const fadeVariant = {
+  initial: {opacity: 0},
+  in: { opacity: 1 },
+  out: { opacity: 0 },
+}
+
 
 function Personal() {
   return (
@@ -49,11 +55,15 @@ function Personal() {
         className="personal"
       >
       <motion.div transition={pageTransition} variants={leftVariant} className="personal-personal">
-        hiiiii This is my personal
+        <motion.div transition={pageTransition} variants={fadeVariant} >
+          this is my personallll
+        </motion.div>
       </motion.div>
       <motion.div  transition={pageTransition} variants={rightVariant} className="personal-home">
         <Link to="/home">
-          <img src={require("../images/collapse-arrow.png")} className="left-arrow"/>
+          <motion.div transition={pageTransition} variants={fadeVariant} >
+            <img src={require("../images/collapse-arrow.png")} className="left-arrow"/>
+          </motion.div>
         </Link>
       </motion.div>
       </motion.div>

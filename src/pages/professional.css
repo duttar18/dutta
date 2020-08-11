@@ -22,7 +22,6 @@
     background-color: var(--per1);
     color: var(--per2);
     height: 100%;
-    min-width: 50px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -40,6 +39,6 @@
   }
   
   .right-arrow {
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
     width: 50px;
   }

@@ -42,7 +42,7 @@ const professionalVariants = {
 
 const leftVariant = {
   initial: {width: '50%' },
-  in: { width: '5%' },
+  in: { 'width': '5%', 'min-width': '50px'},
   out: { width: '50%' },
 }
 const rightVariant = {
@@ -50,6 +50,13 @@ const rightVariant = {
   in: { width: '95%' },
   out: { width: '50%' },
 }
+
+const fadeVariant = {
+  initial: {opacity: 0},
+  in: { opacity: 1 },
+  out: { opacity: 0 },
+}
+
 
 
 function Professional() {
@@ -66,11 +73,15 @@ function Professional() {
       >
       <motion.div transition={pageTransition} variants={leftVariant} className="professional-home">
         <Link to="/home">
-          <img src={require("../images/collapse-arrow.png")} className="right-arrow"/>
+          <motion.div transition={pageTransition} variants={fadeVariant} >
+            <img src={require("../images/collapse-arrow.png")} className="right-arrow"/>
+          </motion.div>
         </Link>
       </motion.div>
       <motion.div  transition={pageTransition} variants={rightVariant} className="professional-professional">
-        hiiiii This is my professional
+        <motion.div transition={pageTransition} variants={fadeVariant} >
+          this is my professionallllll
+        </motion.div>
       </motion.div>
       </motion.div>
   );

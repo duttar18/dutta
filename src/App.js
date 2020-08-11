@@ -17,9 +17,9 @@ function App() {
 
         <AnimatePresence exitBeforeEnter>  
           <Switch location={location} key={location.pathname}>
-            <Route exact path={["/home","/"]} component={Home} />
-            <Route exact path="/personal" component={Personal}/>
-            <Route exact path="/professional" component={Professional}/>
+            <Route path="/personal" component={Personal}/>
+            <Route path="/professional" component={Professional}/>
+            <Route path={["/home","/"]} component={Home} />
           </Switch>
         </AnimatePresence>
 
