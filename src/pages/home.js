@@ -46,7 +46,12 @@ function Home() {
       </Link>
       <Link to="professional" className="home-professional">
         <motion.div transition={pageTransition} variants={fadeVariant} >
-          
+            <div className="contact">
+              Raul Dutta<br/>
+              Ann Arbor, MI<br/>
+              duttar@umich.edu<br/>
+              1-248-524-2419
+            </div>
             <div className="last-name">Dutta</div>
             <hr className="home-professional-hr" />
             <p className="home-professional-p" >professional</p>

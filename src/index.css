@@ -1,7 +1,9 @@
 :root {
   --pro1: #2D3142;
+  --pro1-highlight: #333647;
   --pro2: #9EA9BD;
   --per1: #EF8354;
+  --per1-highlight: #F48859;
   --per2: #FFFFFF;
   --homePad: 40px;
 }

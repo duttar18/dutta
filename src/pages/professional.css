@@ -6,39 +6,74 @@
     flex-direction: row; 
   }
   
-  .professional-professional {
-    background-color: var(--pro1);
-    color: var(--pro2);
-    height: 100%;
-    width: 50%;
-    align-items: right;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-decoration: none;
-  }
+.professional-professional {
+  background-color: var(--pro1);
+  color: var(--pro2);
+  height: 100%;
+  width: 50%;
+  align-items: right;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
+}
 
-  .professional-home {
-    background-color: var(--per1);
-    color: var(--per2);
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: left;
-    text-decoration: none;
-  }
+.professional-home {
+  background-color: var(--per1);
+  color: var(--per2);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: left;
+  text-decoration: none;
+}
 
-  .professional-home a {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-decoration: none;
-  }
+.professional-home a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.right-arrow {
+  transform: rotate(-90deg);
+  width: 50px;
+}
+
+.professional-container{
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.professional-nav {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.5em;
+  padding: 30px 20px 20px 50px;
+}
+
+.professional-nav a {
+  color: var(--pro2);
+  margin: 0px 20px 0px 0px;
+  cursor: pointer;
+  padding: 10px 10px 10px 10px;
   
-  .right-arrow {
-    transform: rotate(-90deg);
-    width: 50px;
-  }
+}
+
+.professional-content-container {
+  width: auto;
+  height: auto;
+  padding: 20px 50px 20px 50px;
+}
+.activePage{
+  border: thin solid var(--pro2);
+}

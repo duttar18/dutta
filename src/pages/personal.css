@@ -33,12 +33,41 @@
     min-width: 50px;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: left;
+    flex-direction: row;
+    align-items: center;
     text-decoration: none;
   }
   
   .left-arrow {
     transform: rotate(90deg);
     width: 50px;
+  }
+
+  .comingSoon {
+    font-size: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+  }
+  .logo div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+  }
+
+  .logo div div{
+    margin: 0px 5px 0px 5px;
   }
