@@ -1,0 +1,20 @@
+[
+    {
+        "title" : "OffHours",
+        "date" : "May 2020-Present",
+        "location" : "Troy, MI",
+        "oneLiner" : "Educaitonal treaming platform to create an convinient and casual Office Hours experience for students",
+        "description" : "This project yada yada yada",
+        "imageUrl" : "offhours.png",
+        "technologies" : ["React","Flask-Python","Twitch API","MySQL"]
+    },
+    {
+        "title" : "OffHours",
+        "date" : "May 2020-Present",
+        "location" : "Troy, MI",
+        "oneLiner" : "Educaitonal treaming platform to create an convinient and casual Office Hours experience for students",
+        "description" : "This project yada yada yada",
+        "imageUrl" : "offhours.png",
+        "technologies" : ["React","Flask-Python","Twitch API","MySQL"]
+    }
+]

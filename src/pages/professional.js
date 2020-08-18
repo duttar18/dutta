@@ -103,13 +103,13 @@ function Professional() {
 
               <Switch>
                 <>
-                  <Route path="/" component={() => <NavBar url={memoryHistory["location"]["pathname"]} memoryHistory={memoryHistory} />} />
-                  <div className="professional-content-container">
-                    <Route path="/projects" component={Projects} />
-                    <Route path="/skills" component={Skills} />
-                    <Route path="/resume" component={Resume} />
-                    <Route exact path="/" component={Projects} />
-                  </div>
+                    <Route path="/" component={() => <NavBar url={memoryHistory["location"]["pathname"]} memoryHistory={memoryHistory} />} />
+                  
+                      <Route path="/projects" component={Projects} />
+                      <Route path="/skills" component={Skills} />
+                      <Route path="/resume" component={Resume} />
+                      <Route exact path="/" component={Projects} />
+                  
                 </>
               </Switch>
             </AnimatePresence>
