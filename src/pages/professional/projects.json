@@ -14,7 +14,7 @@
         "date" : "September 2019-July 2020",
         "location" : "Ann Arbor, MI",
         "role" : "Product Manger",
-        "description" : "Executed a 15k contract to write a white paper on an AI assistant that collects data for predictive maintainence from airforce maintainers.",
+        "description" : "Delivered a white paper on using an AI assistant to collect data for predictive maintainence in the airforce as part of a 15k contract.",
         "imageUrl" : "keyword.png",
         "technologies" : ["White Paper", "Customer Discovery", "Market Research"]
     },
@@ -27,5 +27,45 @@
         "description" : "Designed a platform to crowd source tuition in low income areas in order to build a culture of education.",
         "imageUrl" : "tuity.png",
         "technologies" : ["Customer Discovery","Prototyping"]
+    },
+    {
+        "title" : "Outlaws",
+        "hackathon" : "YeeHaw Hacks",
+        "date" : "August 2020",
+        "location" : "Virtual",
+        "role" : "Backend",
+        "description" : "Play your friends online in this multi-player reaction based Mexican Standoff! May the best win ;)",
+        "imageUrl" : "outlaws.png",
+        "technologies" : ["React","Flask-Python","SQLAlchemy","Heroku"]
+    },
+    {
+        "title" : "Mentii",
+        "hackathon" : "Hacky Birthday MLH!",
+        "date" : "July 2020",
+        "location" : "Virtual",
+        "role" : "FullStack",
+        "description" : "A platform to help those without family connections to better network with mentors in a world that has gone virtual.",
+        "imageUrl" : "mentii.png",
+        "technologies" : ["React","Flask-Python","SQLAlchemy","Heroku","Twitch API"]
+    },
+    {
+        "title" : "WeWe Code",
+        "hackathon" : "Microsoft VS Code Hackathon",
+        "date" : "June 2020",
+        "location" : "Virtual",
+        "role" : "FullStack",
+        "description" : "Built a platform for a pair programming community for new coders to build personal projects.",
+        "imageUrl" : "wewecode.png",
+        "technologies" : ["Jinja","Flask-Python","SQLAlchemy"]
+    },
+    {
+        "title" : "Find Your Fun",
+        "hackathon" : "Hack A2",
+        "date" : "June 2020",
+        "location" : "Ann Arbor, MI",
+        "role" : "Backend",
+        "description" : "A single page that scrapes different sources to centralize a list of all the events around Ann Arbor.",
+        "imageUrl" : "findyourfun.png",
+        "technologies" : ["Python","CherryPy","Heroku","Selenium"]
     }
 ]

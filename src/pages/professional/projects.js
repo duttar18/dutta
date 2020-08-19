@@ -1,14 +1,24 @@
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { withRouter, Router, NavLink, Route, Switch, useLocation } from 'react-router-dom';
 import { createMemoryHistory } from 'history'
 import './projects.css';
 
+
+
 function Projects() {
-  const [projects, setProjects] = useState(require('./projects.json'))
-  const [hackathons, setHackathons] = useState(require('./hackathons.json'))
+  const [projects, setProjects] = useState(require('./projects.json').map((project,index)=>{
+    return ({...project,"is-flipped" : false,"index":index})
+  }));
+
+  const flipCard = (index) => {
+    let temp = [...projects];
+    console.log(temp[index]["is-flipped"])
+    temp[index]["is-flipped"]= !temp[index]["is-flipped"];
+    setProjects(temp);
+  }
 
   return (
     <div className="project-container-container">
@@ -16,10 +26,11 @@ function Projects() {
         <h1>Large Scale Projects</h1>
         <div className="project-subcontainer">
 
-          {projects.map((project)=>(
+          {projects.filter((project)=>(!project["hackathon"])).map((project)=>(
             <>
               <div class="project-card">
-                <div class="project-card-inner">
+                  <div class={ project["is-flipped"] ? "project-card-inner is-flipped" : "project-card-inner"} >
+
 
                   <div class="project-card-front">
                     <h1>{project.title}</h1>
@@ -30,6 +41,7 @@ function Projects() {
                       <b className="location">{project.location}</b>
                       <b className="date">{project.date}</b>
                     </div>
+                    <button onClick={()=>{flipCard(project.index)}}>flip</button>
                   </div>
 
                   <div class="project-card-back">
@@ -39,6 +51,7 @@ function Projects() {
                         <div>{technology}</div>
                       ))}
                     </div>
+                    <button onClick={()=>{flipCard(project.index)}}>flip</button>
                   </div>
                 </div>
               </div>
@@ -51,10 +64,10 @@ function Projects() {
       <div className="project-container">
         <h1>Hackathons</h1>
         <div className="project-subcontainer">
-          {hackathons.map((project)=>(
+          {projects.filter((project)=>(project["hackathon"])).map((project,index)=>(
               <>
                 <div class="project-card">
-                  <div class="project-card-inner">
+                  <div class={ project["is-flipped"] ? "project-card-inner is-flipped" : "project-card-inner"} >
 
                     <div class="project-card-front">
                       <h1>{project.title}</h1>
@@ -66,6 +79,7 @@ function Projects() {
                         <b className="location">{project.location}</b>
                         <b className="date">{project.date}</b>
                       </div>
+                    <button onClick={()=>{flipCard(project.index)}}>flip</button>
                     </div>
 
                     <div class="project-card-back">
@@ -75,6 +89,7 @@ function Projects() {
                           <div>{technology}</div>
                         ))}
                       </div>
+                    <button onClick={()=>{flipCard(project.index)}}>flip</button>
                     </div>
                   </div>
                 </div>

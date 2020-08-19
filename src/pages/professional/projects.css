@@ -36,7 +36,7 @@
     transform-style: preserve-3d;
   }
   
-  .project-card:hover .project-card-inner {
+  .project-card .project-card-inner.is-flipped {
     transform: rotateY(180deg);
   }
   
