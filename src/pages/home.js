@@ -42,7 +42,7 @@ function Home() {
             <div className="first-name">Raul</div>
             <hr className="home-personal-hr" />
             <p className="home-personal-p" >personal</p> <br/>
-            <p className="home-personal-scratch">--Made Fr</p>
+            <p className="home-personal-scratch">--Made Fro</p>
         </motion.div>
       </Link>
       <Link to="professional" className="home-professional">
@@ -56,7 +56,7 @@ function Home() {
             <div className="last-name">Dutta</div>
             <hr className="home-professional-hr" />
             <p className="home-professional-p" >professional</p> <br/>
-            <p className="home-professional-scratch">om Scratch--</p>
+            <p className="home-professional-scratch">m Scratch--</p>
         </motion.div>
       </Link>
     </motion.div>
