@@ -44,6 +44,12 @@
   font-size: 2em;
 }
 
+.home-personal-scratch {
+  text-align: right;
+  font-size: 30px;
+}
+
+
 .home-personal {
   background-color: var(--per1);
   color: var(--per2);
@@ -82,6 +88,11 @@
   padding-right: var(--homePad);
   margin: 0px;
   font-size: 2em;
+}
+
+.home-professional-scratch {
+  text-align: left;
+  font-size: 30px;
 }
 
 .contact {

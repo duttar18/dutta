@@ -37,7 +37,6 @@ function Projects() {
                       {project.technologies.map((technology)=>(
                         <div>{technology}</div>
                       ))}
-
                     </div>
                   </div>
 
