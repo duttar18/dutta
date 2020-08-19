@@ -6,6 +6,41 @@ import { withRouter, Router, NavLink, Route, Switch, useLocation } from 'react-r
 import { createMemoryHistory } from 'history'
 import './projects.css';
 
+function Card(props){
+  const [flipped,setFlipped] = useState(false);
+  return (
+    <div class="project-card">
+        <div class={ flipped ? "project-card-inner is-flipped" : "project-card-inner"} >
+
+
+        <div class="project-card-front">
+          <h1>{props.project.title}</h1>
+          {props.project.hackathon &&
+            <b>{props.project.hackathon}</b>
+          }
+          <img src={require('./projectImages/'+props.project.imageUrl)}/>
+
+          <div className="info">
+            <b className="role">{props.project.role}</b>
+            <b className="location">{props.project.location}</b>
+            <b className="date">{props.project.date}</b>
+          </div>
+          <button onClick={()=>{setFlipped(true)}}>flip</button>
+        </div>
+
+        <div class="project-card-back">
+          <div>{props.project.description}</div>
+          <div className="technologies">
+            {props.project.technologies.map((technology)=>(
+              <div>{technology}</div>
+            ))}
+          </div>
+          <button onClick={()=>{setFlipped(false)}}>flip</button>
+        </div>
+      </div>
+    </div>
+    )
+}
 
 
 function Projects() {
@@ -27,74 +62,19 @@ function Projects() {
         <div className="project-subcontainer">
 
           {projects.filter((project)=>(!project["hackathon"])).map((project)=>(
-            <>
-              <div class="project-card">
-                  <div class={ project["is-flipped"] ? "project-card-inner is-flipped" : "project-card-inner"} >
-
-
-                  <div class="project-card-front">
-                    <h1>{project.title}</h1>
-                    <img src={require('./projectImages/'+project.imageUrl)}/>
-
-                    <div className="info">
-                      <b className="role">{project.role}</b>
-                      <b className="location">{project.location}</b>
-                      <b className="date">{project.date}</b>
-                    </div>
-                    <button onClick={()=>{flipCard(project.index)}}>flip</button>
-                  </div>
-
-                  <div class="project-card-back">
-                    <div>{project.description}</div>
-                    <div className="technologies">
-                      {project.technologies.map((technology)=>(
-                        <div>{technology}</div>
-                      ))}
-                    </div>
-                    <button onClick={()=>{flipCard(project.index)}}>flip</button>
-                  </div>
-                </div>
-              </div>
-            </>
+            <Card project={project}/>
           ))}
 
 
         </div>
       </div>
+
       <div className="project-container">
         <h1>Hackathons</h1>
         <div className="project-subcontainer">
-          {projects.filter((project)=>(project["hackathon"])).map((project,index)=>(
-              <>
-                <div class="project-card">
-                  <div class={ project["is-flipped"] ? "project-card-inner is-flipped" : "project-card-inner"} >
-
-                    <div class="project-card-front">
-                      <h1>{project.title}</h1>
-                      <b>{project.hackathon}</b>
-                      <img src={require('./projectImages/'+project.imageUrl)}/>
-                      
-                      <div className="info">
-                        <b className="role">{project.role}</b>
-                        <b className="location">{project.location}</b>
-                        <b className="date">{project.date}</b>
-                      </div>
-                    <button onClick={()=>{flipCard(project.index)}}>flip</button>
-                    </div>
-
-                    <div class="project-card-back">
-                      <div>{project.description}</div>
-                      <div className="technologies">
-                        {project.technologies.map((technology)=>(
-                          <div>{technology}</div>
-                        ))}
-                      </div>
-                    <button onClick={()=>{flipCard(project.index)}}>flip</button>
-                    </div>
-                  </div>
-                </div>
-              </>
-            ))}
+          {projects.filter((project)=>(project["hackathon"])).map((project)=>(
+            <Card project={project}/>
+          ))}
         </div>
       </div>
     </div>
