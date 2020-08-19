@@ -4,9 +4,9 @@
         "date" : "May 2020-Present",
         "location" : "Troy, MI",
         "role" : "Product Manager + FullStack",
-        "description" : "Educational streaming platform to create a convinient and casual OfficeHours experience for students",
+        "description" : "Educational streaming platform to create a convinient and casual office hours experience for students",
         "imageUrl" : "offhours.png",
-        "technologies" : ["React","Flask-Python","Twitch API","MySQL"]
+        "technologies" : ["React","Flask-Python","Twitch API","MySQL","Heroku"]
     },
     {
 
