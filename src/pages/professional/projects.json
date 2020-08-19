@@ -3,18 +3,29 @@
         "title" : "OffHours",
         "date" : "May 2020-Present",
         "location" : "Troy, MI",
-        "oneLiner" : "Educaitonal treaming platform to create an convinient and casual Office Hours experience for students",
-        "description" : "This project yada yada yada",
+        "role" : "Product Manager + FullStack",
+        "description" : "Educational streaming platform to create a convinient and casual OfficeHours experience for students",
         "imageUrl" : "offhours.png",
         "technologies" : ["React","Flask-Python","Twitch API","MySQL"]
     },
     {
-        "title" : "OffHours",
-        "date" : "May 2020-Present",
-        "location" : "Troy, MI",
-        "oneLiner" : "Educaitonal treaming platform to create an convinient and casual Office Hours experience for students",
-        "description" : "This project yada yada yada",
-        "imageUrl" : "offhours.png",
-        "technologies" : ["React","Flask-Python","Twitch API","MySQL"]
+
+        "title" : "Keyword: Data",
+        "date" : "September 2019-July 2020",
+        "location" : "Ann Arbor, MI",
+        "role" : "Product Manger",
+        "description" : "Executed a 15k contract to write a white paper on an AI assistant that collects data for predictive maintainence from airforce maintainers.",
+        "imageUrl" : "keyword.png",
+        "technologies" : ["White Paper", "Customer Discovery", "Market Research"]
+    },
+    {
+
+        "title" : "Tuity",
+        "date" : "September 2019-July 2020",
+        "location" : "Ann Arbor, MI",
+        "role" : "Product Manger",
+        "description" : "Designed a platform to crowd source tuition in low income areas in order to build a culture of education.",
+        "imageUrl" : "tuity.png",
+        "technologies" : ["Customer Discovery","Prototyping"]
     }
 ]

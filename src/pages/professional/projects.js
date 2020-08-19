@@ -12,26 +12,36 @@ function Projects() {
   return (
     <div className="project-container-container">
       <div className="project-container" style={{ borderRight: "1px solid var(--pro2)" }} >
-        <h1>Epics</h1>
+        <h1>Passion Projects</h1>
         <div className="project-subcontainer">
 
           {projects.map((project)=>(
             <>
               <div class="project-card">
                 <div class="project-card-inner">
+
                   <div class="project-card-front">
                     <h1>{project.title}</h1>
-                    <img src={require('./projectImages/'+project.imageUrl)}/><br/>
+                    <img src={require('./projectImages/'+project.imageUrl)}/>
 
                     <div className="info">
-                      <b className="location">{project.location}</b> <br/>
-                      <b className="date">{project.date}</b> <br/>
-                      <b className="one-liner">{project.oneLiner}</b>
+                      <b className="role">{project.role}</b>
+                      <b className="location">{project.location}</b>
+                      <b className="date">{project.date}</b>
                     </div>
                   </div>
+
                   <div class="project-card-back">
-                    
+                    <div>{project.description}</div>
+                    <div className="technologies">
+                      {project.technologies.map((technology)=>(
+                        <div>{technology}</div>
+                      ))}
+
+                    </div>
                   </div>
+
+
                 </div>
               </div>
 
