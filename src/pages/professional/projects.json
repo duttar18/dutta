@@ -6,7 +6,8 @@
         "role" : "Product Manager + FullStack",
         "description" : "Educational streaming platform to create a convinient and casual office hours experience for students",
         "imageUrl" : "offhours.png",
-        "technologies" : ["React","Flask-Python","Twitch API","MySQL","Heroku"]
+        "technologies" : ["React","Flask-Python","Twitch API","MySQL","Heroku"],
+        "repo" : "https://github.com/duttar18/offhours4"
     },
     {
 
@@ -16,7 +17,8 @@
         "role" : "Product Manger",
         "description" : "Delivered a white paper on using an AI assistant to collect data for predictive maintainence in the airforce as part of a 15k contract.",
         "imageUrl" : "keyword.png",
-        "technologies" : ["White Paper", "Customer Discovery", "Market Research"]
+        "technologies" : ["White Paper", "Customer Discovery", "Market Research"],
+        "devpost" : "https://devpost.com/software/keyword-data"
     },
     {
 
