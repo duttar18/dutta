@@ -36,7 +36,10 @@
         "role" : "Backend",
         "description" : "Play your friends online in this multi-player reaction based Mexican Standoff! May the best win ;)",
         "imageUrl" : "outlaws.png",
-        "technologies" : ["React","Flask-Python","SQLAlchemy","Heroku"]
+        "technologies" : ["React","Flask-Python","SQLAlchemy","Heroku"],
+        "devpost" : "https://devpost.com/software/outlaws",
+        "site" : "http://yeehaw-frontend.herokuapp.com/",
+        "repo" : "https://github.com/duttar18/yeehaw-backend"
     },
     {
         "title" : "Mentii",
@@ -46,7 +49,9 @@
         "role" : "FullStack",
         "description" : "A platform to help those without family connections to better network with mentors in a world that has gone virtual.",
         "imageUrl" : "mentii.png",
-        "technologies" : ["React","Flask-Python","SQLAlchemy","Heroku","Twitch API"]
+        "technologies" : ["React","Flask-Python","SQLAlchemy","Heroku","Twitch API"],
+        "devpost" : "https://devpost.com/software/mentii",
+        "repo" : "https://github.com/duttar18/mentii"
     },
     {
         "title" : "WeWe Code",
@@ -56,7 +61,10 @@
         "role" : "FullStack",
         "description" : "Built a platform for a pair programming community for new coders to build personal projects.",
         "imageUrl" : "wewecode.png",
-        "technologies" : ["Jinja","Flask-Python","SQLAlchemy"]
+        "technologies" : ["Jinja","Flask-Python","SQLAlchemy"],
+        "devpost" : "https://devpost.com/software/wewecode",
+        "repo" : "https://github.com/duttar18/wewecode"
+
     },
     {
         "title" : "Find Your Fun",
@@ -66,6 +74,8 @@
         "role" : "Backend",
         "description" : "A single page that scrapes different sources to centralize a list of all the events around Ann Arbor.",
         "imageUrl" : "findyourfun.png",
-        "technologies" : ["Python","CherryPy","Heroku","Selenium"]
+        "technologies" : ["Python","CherryPy","Heroku","Selenium"],
+        "devpost" : "https://devpost.com/software/find-your-fun",
+        "repo" : "https://github.com/duttar18/A2Hacks"
     }
 ]

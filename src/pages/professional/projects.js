@@ -25,17 +25,27 @@ function Card(props){
             <b className="location">{props.project.location}</b>
             <b className="date">{props.project.date}</b>
           </div>
-          <button onClick={()=>{setFlipped(true)}}>flip</button>
+
+
+          {/* <button onClick={()=>{setFlipped(true)}}>flip</button> */}
         </div>
 
         <div class="project-card-back">
-          <div>{props.project.description}</div>
-          <div className="technologies">
-            {props.project.technologies.map((technology)=>(
-              <div>{technology}</div>
-            ))}
+          <div>
+            <div>{props.project.description}</div>
+            <div className="technologies">
+              {props.project.technologies.map((technology)=>(
+                <div>{technology}</div>
+              ))}
+            </div>
+
           </div>
-          <button onClick={()=>{setFlipped(false)}}>flip</button>
+          {/* <button onClick={()=>{setFlipped(false)}}>flip</button> */}
+          <div className="buttonOptions">
+            {props.project["repo"] && <div><a href={props.project["repo"]}><b>Repo</b></a></div>}
+            {props.project["site"] && <div><a href={props.project["site"]}><b>Site</b></a></div>}
+            {props.project["devpost"] && <div><a href={props.project["devpost"]}><b>Devpost</b></a></div>}
+          </div>
         </div>
       </div>
     </div>

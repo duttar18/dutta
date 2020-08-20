@@ -21,7 +21,7 @@
 .project-card {
     all: revert;
     background-color: transparent;
-    height: 245px;
+    height: 250px;
     width: 220px;
     perspective: 1000px;
     margin: 40px 40px 40px 0px;
@@ -36,7 +36,7 @@
     transform-style: preserve-3d;
   }
   
-  .project-card .project-card-inner.is-flipped {
+  .project-card:hover .project-card-inner {
     transform: rotateY(180deg);
   }
   
@@ -50,6 +50,9 @@
     background-color: var(--pro2);
     border-radius: 5px;
     padding: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
   .project-card-front {
@@ -100,3 +103,38 @@
       padding: 4px 4px 4px 4px;
       margin: 5px 5px 0px 0px;
   }
+
+  .buttonOptions {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1;
+      align-items: flex-end;
+  }
+  
+  .buttonOptions div {
+    height:20px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  div.buttonOptions div:nth-child(1) a {
+      background-color: var(--per1);
+      color: var(--per2);
+      text-decoration: none;
+}
+div.buttonOptions div:nth-child(2) a {
+    background-color: var(--per2);
+    color: var(--per1);
+    text-decoration: none;
+}
+div.buttonOptions div:nth-child(3) a {
+    background-color: var(--per1);
+    color: var(--per2);
+    text-decoration: none;
+}
