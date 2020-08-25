@@ -6,8 +6,7 @@
         "role" : "Product Manager + FullStack",
         "description" : "Educational streaming platform to create a convinient and casual office hours experience for students",
         "imageUrl" : "offhours.png",
-        "technologies" : ["React","Flask-Python","Twitch API","MySQL","Heroku"],
-        "repo" : "https://github.com/duttar18/offhours4"
+        "technologies" : ["React","Flask-Python","Twitch API","MySQL","Heroku"]
     },
     {
 

@@ -1,19 +1,16 @@
 
-import React, { useState, useEffect } from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
-import { Link } from 'react-router-dom'
-import { withRouter, Router, NavLink, Route, Switch, useLocation } from 'react-router-dom';
-import { createMemoryHistory } from 'history'
+import React, { useState } from 'react'
+import { withRouter} from 'react-router-dom';
 import './projects.css';
 
 function Card(props){
   const [flipped,setFlipped] = useState(false);
   return (
-    <div class="project-card">
-        <div class={ flipped ? "project-card-inner is-flipped" : "project-card-inner"} >
+    <div className="project-card">
+        <div className={ flipped ? "project-card-inner is-flipped" : "project-card-inner"} >
 
 
-        <div class="project-card-front">
+        <div className="project-card-front">
           <h1>{props.project.title}</h1>
           {props.project.hackathon &&
             <b>{props.project.hackathon}</b>
@@ -30,7 +27,7 @@ function Card(props){
           {/* <button onClick={()=>{setFlipped(true)}}>flip</button> */}
         </div>
 
-        <div class="project-card-back">
+        <div className="project-card-back">
           <div>
             <div>{props.project.description}</div>
             <div className="technologies">
@@ -58,12 +55,12 @@ function Projects() {
     return ({...project,"is-flipped" : false,"index":index})
   }));
 
-  const flipCard = (index) => {
-    let temp = [...projects];
-    console.log(temp[index]["is-flipped"])
-    temp[index]["is-flipped"]= !temp[index]["is-flipped"];
-    setProjects(temp);
-  }
+  // const flipCard = (index) => {
+  //   let temp = [...projects];
+  //   console.log(temp[index]["is-flipped"])
+  //   temp[index]["is-flipped"]= !temp[index]["is-flipped"];
+  //   setProjects(temp);
+  // }
 
   return (
     <div className="project-container-container">

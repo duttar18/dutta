@@ -1,9 +1,7 @@
 
 import React from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
-import {Link} from 'react-router-dom'
-import { withRouter, Router, NavLink, Route, Switch, useLocation } from 'react-router-dom';
-import { createMemoryHistory } from 'history'
+import { withRouter} from 'react-router-dom';
+
 
 function Skills() {
   return (

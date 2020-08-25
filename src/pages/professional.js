@@ -69,7 +69,7 @@ const NavBar = (props) => {
     <nav className="professional-nav">
       <a onClick={() => { props.memoryHistory.push("/projects") }} className={(props.url == "/" || props.url == "/projects") ? "activePage" : {}}>Projects</a>
       <a onClick={() => { props.memoryHistory.push("/resume") }} className={props.url == "/resume" ? "activePage" : {}}>Resume</a>
-      <a onClick={() => { props.memoryHistory.push("/skills") }} className={props.url == "/skills" ? "activePage" : {}} >Skills</a>
+      {/* <a onClick={() => { props.memoryHistory.push("/skills") }} className={props.url == "/skills" ? "activePage" : {}} >Skills</a> */}
     </nav>
   )
 }

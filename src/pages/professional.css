@@ -10,7 +10,7 @@
   background-color: var(--pro1);
   color: var(--pro2);
   height: 100%;
-  width: 50%;
+  width: 95%;
   align-items: right;
   display: flex;
   justify-content: center;
@@ -20,6 +20,7 @@
 
 .professional-home {
   background-color: var(--per1);
+  width:5%;
   color: var(--per2);
   height: 100%;
   display: flex;

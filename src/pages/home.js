@@ -1,6 +1,6 @@
 import './home.css';
 import React from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import {withRouter,Link} from 'react-router-dom'
 
 const personalVariants = {
