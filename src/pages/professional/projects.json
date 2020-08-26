@@ -60,7 +60,7 @@
         "date" : "June 2020",
         "location" : "Virtual",
         "role" : "FullStack",
-        "description" : "Built a platform for a pair programming community for new coders to build personal projects.",
+        "description" : "Built a VS Code extension to create a platform for a pair programming community for new coders to build personal projects.",
         "imageUrl" : "wewecode.png",
         "technologies" : ["Jinja","Flask-Python","SQLAlchemy"],
         "devpost" : "https://devpost.com/software/wewecode",
