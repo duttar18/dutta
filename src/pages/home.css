@@ -111,9 +111,39 @@
   background-color: white;
   width: auto;
   height: auto;
-
 }
 .links img {
   height: 50px;
   margin: 10px;
+}
+
+.umich {
+  height: 20px;
+  width: auto;
+}
+
+.looking {
+  position:absolute;
+  bottom: 10px;
+  right:15px;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: white;
+  height: auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-size: 1.2em;
+  width: 230px;
+  justify-content: center;
+}
+.looking p {
+  margin: 0px;
+  text-align: center;
+  justify-content: center;
+}
+.bionocular {
+  height: 50px;
+  width: auto;
 }

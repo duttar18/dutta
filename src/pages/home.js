@@ -49,9 +49,10 @@ function Home() {
         <motion.div transition={pageTransition} variants={fadeVariant} >
             <div className="contact">
               Raul Dutta<br/>
-              Ann Arbor, MI<br/>
               duttar@umich.edu<br/>
-              248-225-7238
+              248-225-7238 <br/>
+              BSE Computer Science<br/>
+              <img className="umich" src={require("./homeImages/umich.png")}/>
             </div>
             <div className="last-name">Dutta</div>
             <hr className="home-professional-hr" />
@@ -62,6 +63,13 @@ function Home() {
       <div className="links">
         <a target="_blank" rel="noopener noreferrer" href="https://github.com/duttar18"><img src={require("./homeImages/github.png")}/></a>
         <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/rauldutta/"><img src={require("./homeImages/linkedin.png")}/></a>
+      </div>
+      <div className="looking">
+        <img className="bionocular" src={require("./homeImages/bionocular.png")}/>
+        <p><b>Seeking Summer and Winter Internship:</b></p>
+        <p>Backend</p>
+        <p>FullStack</p>
+        <p>Product Management</p>
       </div>
     </motion.div>
   );
