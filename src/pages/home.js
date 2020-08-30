@@ -51,7 +51,7 @@ function Home() {
               Raul Dutta<br/>
               Ann Arbor, MI<br/>
               duttar@umich.edu<br/>
-              1-248-524-2419
+              248-225-7238
             </div>
             <div className="last-name">Dutta</div>
             <hr className="home-professional-hr" />
@@ -59,6 +59,10 @@ function Home() {
             <p className="home-professional-scratch">m Scratch--</p>
         </motion.div>
       </Link>
+      <div className="links">
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/duttar18"><img src={require("./homeImages/github.png")}/></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/rauldutta/"><img src={require("./homeImages/linkedin.png")}/></a>
+      </div>
     </motion.div>
   );
 }
