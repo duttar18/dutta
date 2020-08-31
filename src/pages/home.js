@@ -60,17 +60,19 @@ function Home() {
             <p className="home-professional-scratch">m Scratch--</p>
         </motion.div>
       </Link>
-      <div className="links">
-        <a target="_blank" rel="noopener noreferrer" href="https://github.com/duttar18"><img src={require("./homeImages/github.png")}/></a>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/rauldutta/"><img src={require("./homeImages/linkedin.png")}/></a>
-      </div>
-      <div className="looking">
-        <img className="bionocular" src={require("./homeImages/bionocular.png")}/>
-        <p><b>Seeking Summer and Winter Internship:</b></p>
-        <p>Backend</p>
-        <p>FullStack</p>
-        <p>Product Management</p>
-      </div>
+      <motion.div transition={pageTransition} variants={fadeVariant} >
+        <div className="links">
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/duttar18"><img src={require("./homeImages/github.png")}/></a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/rauldutta/"><img src={require("./homeImages/linkedin.png")}/></a>
+        </div>
+        <div className="looking">
+          <img className="bionocular" src={require("./homeImages/bionocular.png")}/>
+          <p><b>Seeking Summer and Winter Internship:</b></p>
+          <p>Backend</p>
+          <p>FullStack</p>
+          <p>Product Management</p>
+        </div>
+      </motion.div>
     </motion.div>
   );
 }
