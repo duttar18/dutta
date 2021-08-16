@@ -51,6 +51,7 @@ function Home() {
               Raul Dutta<br/>
               duttar@umich.edu<br/>
               248-225-7238 <br/>
+              MSE Computer Vision<br/>
               BSE Computer Science<br/>
               <img className="umich" src={require("./homeImages/umich.png")}/>
             </div>
@@ -67,7 +68,7 @@ function Home() {
         </div>
         <div className="looking">
           <img className="bionocular" src={require("./homeImages/bionocular.png")}/>
-          <p><b>Seeking Summer and Winter Internship:</b></p>
+          <p><b>Seeking New Grad Roles starting Summer 2022:</b></p>
           <p>Backend</p>
           <p>FullStack</p>
           <p>Product Management</p>

@@ -13,7 +13,7 @@ function Resume() {
  
   return (
     <div className="resume-container">
-      <form method="get" action={require('./resume2020.pdf')} className="resume-download-container">
+      <form method="get" action={require('./resume2021-v1.pdf')} className="resume-download-container">
         <button className="resume-download" type="submit">Open as PDF</button>
       </form>
       <Document file={require('./resume2020.pdf')}>

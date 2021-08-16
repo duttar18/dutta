@@ -12,9 +12,6 @@ import Personal from './pages/personal'
 function App() {
   const location = useLocation();
   return (
-    
-      
-
         <AnimatePresence exitBeforeEnter>  
           <Switch location={location} key={location.pathname}>
             <Route path="/personal" component={Personal}/>
